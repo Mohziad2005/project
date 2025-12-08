@@ -47,6 +47,57 @@ welcome {
   width: 50%;
   text-align: center;
 }
+.books .shelf {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.books .shelf img {
+  width: 100%;
+  max-width: 140px;
+  margin: 0 -20px;
+  position: relative;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.books .shelf img:nth-child(3) {
+  width: 100%;
+  max-width: 220px;
+  transform: translateY(-20px);
+  z-index: 5;
+}
+
+.books .shelf img:nth-child(2),
+.books .shelf img:nth-child(4) {
+  z-index: 4;
+}
+
+.books .shelf img:nth-child(1),
+.books .shelf img:nth-child(5) {
+  z-index: 3;
+}
+
+.books .shelf-img {
+  margin-top: -40px;
+  width: 100%;
+  max-width: 80%;
+  z-index: 0;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  background-color: lightseagreen;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
 
 
