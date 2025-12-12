@@ -1,10 +1,14 @@
-body {
+/* 1. Body and base styles */
+body 
+{
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.hero {
+/* 2. Hero Section */
+.hero 
+{
   position: relative;
   display: flex;
   align-items: center;
@@ -15,7 +19,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.hero::before {
+.hero::before 
+{
   content: "";
   position: absolute;
   inset: 0;
@@ -23,38 +28,48 @@ body {
   opacity: 0.88;
   z-index: 0;
 }
-welcome {
+
+/* 3. Welcome Text */
+.welcome 
+{
   position: relative;
   z-index: 1;
   width: 50%;
   padding: 50px;
 }
 
-.welcome h1 {
+.welcome h1 
+{
   font-size: 40px;
   font-weight: bold;
 }
 
-.welcome p {
+.welcome p 
+{
   margin: 20px 0;
   line-height: 1.5;
   color: #333;
 }
 
-.books {
+/* 4. Books Section */
+.books 
+{
   position: relative;
   z-index: 1;
   width: 50%;
   text-align: center;
 }
-.books .shelf {
+
+.books .shelf 
+{
   display: flex;
   justify-content: center;
   align-items: flex-end;
   position: relative;
 }
 
-.books .shelf img {
+.books .shelf img 
+{
   width: 100%;
   max-width: 140px;
   margin: 0 -20px;
@@ -63,24 +78,28 @@ welcome {
   z-index: 1;
 }
 
-.books .shelf img:nth-child(3) {
-  width: 100%;
+/* Specific styles by classes*/
+.books .shelf img.book3 
+{
   max-width: 220px;
   transform: translateY(-20px);
   z-index: 5;
 }
 
-.books .shelf img:nth-child(2),
-.books .shelf img:nth-child(4) {
+.books .shelf img.book2,
+.books .shelf img.book4 
+{
   z-index: 4;
 }
 
-.books .shelf img:nth-child(1),
-.books .shelf img:nth-child(5) {
+.books .shelf img.book1,
+.books .shelf img.book5 
+{
   z-index: 3;
 }
 
-.books .shelf-img {
+.books .shelf-img 
+{
   margin-top: -40px;
   width: 100%;
   max-width: 80%;
@@ -88,7 +107,9 @@ welcome {
   position: relative;
 }
 
-.btn {
+/* 5. Buttons */
+.btn 
+{
   display: inline-block;
   background-color: lightseagreen;
   color: white;
@@ -97,6 +118,103 @@ welcome {
   border-radius: 4px;
   font-weight: bold;
   transition: 0.3s;
+}
+
+.btn:hover 
+{
+  background-color: teal;
+}
+
+/* 6. Properties Cards */
+.properties 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.properties .card 
+{
+  background: #fff;
+  border: 5px solid rgba(32, 178, 170, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.properties .card:hover 
+{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.properties .card i 
+{
+  font-size: 40px;
+  color: lightseagreen;
+  margin-bottom: 15px;
+}
+
+.properties .card h3 
+{
+  margin: 10px 0;
+}
+
+/* 7. About Us */
+.about-us 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.about-us .about-img 
+{
+  width: 50%;
+  text-align: center;
+}
+
+.about-us .about-img img 
+{
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-us .about-text
+{
+  width: 50%;
+  padding: 20px;
+}
+
+.about-us .about-text h2 
+{
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.about-us .about-text p
+{
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-us .about-text .btn 
+{
+  background-color: lightseagreen;
+}
+
+.about-us .about-text .btn:hover
+{
+  background-color: teal;
 }
 
 
